@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: move-pod  # 생성될 Pod의 이름
+spec:
+  containers:
+    - name: main  # 컨테이너 이름
+      image: ubuntu:latest  # Ubuntu 최신 버전
+      command: [ "/bin/bash", "-c", "--" ]  # 컨테이너 실행 시 /bin/bash를 실행
+      args: [ "sleep infinity" ]  # 종료되지 않도록 무한 대기
+      volumeMounts:
+        - name: nfs-volume  # 정의된 볼륨을 컨테이너 내 `/data`에 마운트
+          mountPath: /data
+  volumes:
+    - name: nfs-volume  # 볼륨 정의
+      persistentVolumeClaim:
+        claimName: nfs-pvc  # 기존에 만든 PVC(`nfs-pvc`)와 연결

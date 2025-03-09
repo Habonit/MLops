@@ -1,0 +1,10 @@
+scipy
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+pillow
+imblearn
+aif360
+autogluon

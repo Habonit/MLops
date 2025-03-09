@@ -1,0 +1,52 @@
+# nfs 서버를 만드는 deployment
+apiVersion: apps/v1 # Kubernetes API 버전
+kind: Deployment # Kubernetes 실행할 리소스 타입
+metadata: 
+  name: nfs-server # Deployment의 이름 (nfs-server)
+spec:
+  replicas: 1 # NFS 서버는 하나만 실행 (1개 Pod만 생성)
+  selector:
+    matchLabels:
+      role: nfs-server # Label이 "nfs-server"인 Pod을 선택
+  template:
+    metadata:
+      labels:
+        role: nfs-server # Pod에 "nfs-server" Label 추가가
+    spec:
+      containers:
+        - name: nfs-server # 컨테이너 이름(NFS 서버)
+          image: gcr.io/google_containers/volume-nfs:0.8  # NFS 서버용 컨테이너 이미지를 사용해 nfs 노드를 하나 띄우는 것
+          ports:
+            - name: nfs  # NFS 서버용 컨테이너 이미지
+              containerPort: 2049 # NFS 기본 포트 (파일 공유)
+            - name: mountd # NFS 마운트 데몬 포트
+              containerPort: 20048
+            - name: rpcbind # RPC 바인딩 포트
+              containerPort: 111
+          securityContext:
+            privileged: true # 컨테이너가 루트 권한을 사용하도록 허용 (NFS 서버 실행에 필요)
+          volumeMounts:
+            - name: nfs-pvc  # 마운트할 볼륨 이름
+              mountPath: /exports   # 컨테이너 내부에서 /exports 디렉터리에 마운트 (NFS 공유 폴더)
+      volumes:
+        - name: nfs-pvc
+          gcePersistentDisk:
+            pdName: storage-nfs  # GCE에서 만든 10GB 디스크 이름
+            fsType: ext4
+---
+# 클러스터에서 nfs-server에 접근 가능하도록 service 또한 설정해야 함.
+apiVersion: v1
+kind: Service
+metadata: 
+  name: nfs-server
+spec:
+  selector:
+    role: nfs-server 
+  ports:
+    - name: nfs
+      port: 2049 
+    - name: mountd
+      port: 20048
+    - name: rpcbind
+      port: 111 
+
