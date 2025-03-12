@@ -7,4 +7,6 @@ seaborn
 pillow
 imblearn
 aif360
+aif360[all]
 autogluon
+xgboost
