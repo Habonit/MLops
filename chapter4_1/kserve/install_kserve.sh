@@ -27,7 +27,7 @@ kubectl apply -f cert-manager.yaml
 
 # Step 6: KServe 설치
 echo "✅ 6. KServe 적용 중..."
-kubectl apply -f kserve.yaml
+kubectl create -f kserve.yaml
 
 echo "🚀 모든 KServe 컴포넌트 설치 완료! 상태 확인 중..."
 
