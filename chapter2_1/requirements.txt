@@ -10,3 +10,4 @@ aif360
 aif360[all]
 autogluon
 xgboost
+statsmodels
