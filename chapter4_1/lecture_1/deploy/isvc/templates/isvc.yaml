@@ -11,3 +11,5 @@ spec:
       modelFormat:
         name: {{ .Values.modelFormat }}
       storageUri: {{ .Values.storageUri }}
+      resources:
+        {{- toYaml .Values.resources | nindent 8 }}

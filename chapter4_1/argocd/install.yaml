@@ -1,0 +1,5 @@
+# kubectl create namespace argocd
+# kubectl apply -n argocd -f argocd-install.yaml
+# kubectl edit service argocd-server -n argocd
+# LoadBalancer
+# 비밀번호: 

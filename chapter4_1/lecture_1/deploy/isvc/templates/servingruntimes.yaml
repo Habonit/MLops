@@ -15,12 +15,7 @@ spec:
     image: tensorflow/serving:2.13.0
     name: kserve-container
     resources:
-      limits:
-        cpu: "1"
-        memory: 2Gi
-      requests:
-        cpu: "1"
-        memory: 2Gi
+      {{- toYaml .Values.resources | nindent 8 }}
   supportedModelFormats:
   - autoSelect: true
     name: {{ .Values.modelFormat }}

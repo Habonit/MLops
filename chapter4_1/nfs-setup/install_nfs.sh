@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# gcloud auth login
+# gcloud container clusters get-credentials lecture-cluster --zone us-central1-c
+
+
 set -e  # 오류 발생 시 즉시 종료
 set -o pipefail
 
