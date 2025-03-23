@@ -3,3 +3,6 @@
 # kubectl edit service argocd-server -n argocd
 # LoadBalancer
 # 비밀번호: 
+
+# 이후 kubectl delete pod move-pod
+# 이후 kubectl delete pod move-pod-2
