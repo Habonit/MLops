@@ -2,3 +2,5 @@
 
 chapter2_1/*.zip
 chapter2_1/AutogluonModels
+chapter2_1/checkpoints
+chapter2_1/output

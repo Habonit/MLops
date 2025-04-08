@@ -5,13 +5,13 @@ set -o pipefail
 
 echo "🚀 NFS 관련 리소스 삭제 시작..."
 
-# # Step 1: move-pod2 삭제
-# echo "🗑️ 1. move-pod2.yaml 삭제 중..."
-# kubectl delete -f move-pod2.yaml --ignore-not-found=true
+# Step 1: move-pod2 삭제
+echo "🗑️ 1. move-pod2.yaml 삭제 중..."
+kubectl delete -f move-pod2.yaml --ignore-not-found=true
 
-# # Step 2: move-pod 삭제
-# echo "🗑️ 2. move-pod.yaml 삭제 중..."
-# kubectl delete -f move-pod.yaml --ignore-not-found=true
+# Step 2: move-pod 삭제
+echo "🗑️ 2. move-pod.yaml 삭제 중..."
+kubectl delete -f move-pod.yaml --ignore-not-found=true
 
 # Step 3: Deployment 삭제
 echo "🗑️ 3. deployment.yaml 삭제 중..."
