@@ -22,5 +22,17 @@
 - **TensorFlow & PyTorch**: 딥러닝 모델 구축 및 훈련
 - **CI/CD 도구**: 지속적 통합 및 배포 파이프라인 구축
 
+## 디렉토리 구조
+
+```plaintext
+MLOPS/
+├── .venv/              
+├── chapter2_1/         # Chapter 2-1: 데이터 전처리와 기본 EDA, 모델 훈련 방법에 대한 실습 자료
+├── chapter4_1/         # 
+├── .gitignore          
+└── README.md  
+```         
+
+
 ## 스터디 기간
 2025.03.01 ~ 진행 중
