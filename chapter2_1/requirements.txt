@@ -12,3 +12,4 @@ xgboost
 statsmodels
 sentence-transformers
 tf-keras
+torchsummary
