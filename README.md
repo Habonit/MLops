@@ -12,14 +12,16 @@
 
 강의에서 다루는 주요 기술 스택은 다음과 같습니다:
 
+![MLflow](https://img.shields.io/badge/MLflow-Experiment_Tracking-blue?logo=mlflow)![Kubeflow](https://img.shields.io/badge/Kubeflow-MLOps_Platform-326CE5?logo=kubeflow&logoColor=white)![Docker](https://img.shields.io/badge/Docker-Container-2496ED?logo=docker&logoColor=white)![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?logo=kubernetes&logoColor=white)![Airflow](https://img.shields.io/badge/Airflow-Workflow_Automation-017CEE?logo=apache-airflow&logoColor=white)![Apache Spark](https://img.shields.io/badge/Spark-Big_Data-E25A1C?logo=apachespark&logoColor=white)![PyTorch](https://img.shields.io/badge/PyTorch-Deep_Learning-EE4C2C?logo=pytorch&logoColor=white)![CI/CD](https://img.shields.io/badge/CI%2FCD-Automation-blueviolet?logo=githubactions&logoColor=white)
+
+
 - **MLflow**: 머신러닝 실험 추적 및 모델 관리
 - **Kubeflow**: 쿠버네티스 기반의 MLOps 플랫폼
 - **Docker**: 컨테이너화 기술을 통한 환경 일관성 유지
 - **Kubernetes**: 컨테이너 오케스트레이션을 통한 확장성 및 관리 용이성
 - **Airflow**: 워크플로우 자동화 및 스케줄링
-- **Prometheus & Grafana**: 시스템 모니터링 및 시각화
 - **Spark**: 대규모 데이터 처리 및 분석
-- **TensorFlow & PyTorch**: 딥러닝 모델 구축 및 훈련
+- **PyTorch**: 딥러닝 모델 구축 및 훈련
 - **CI/CD 도구**: 지속적 통합 및 배포 파이프라인 구축
 
 ## 주차별 작성 기술 블로그
