@@ -30,6 +30,8 @@
 ```plaintext
 chapter2_1/
 ├── data/                          # 데이터셋 저장 디렉토리
+├── docs/                          # 강의 이론 자료
+├── practice_code/                 # 강의 실습 코드
 ├── _1_Data_Sturucture.ipynb       # 데이터 구조 (정형/비정형) 소개
 ├── _2_Data_Sampling_for_Imbalance.ipynb   # 불균형 데이터 처리 (SMOTE 등)
 ├── _3_AIF360.ipynb                # AIF360을 활용한 공정성 처리
@@ -40,3 +42,9 @@ chapter2_1/
 ├── README.md                      # 프로젝트 설명 문서
 └── requirements.txt               # 실습 환경 패키지 의존성 목록
 ```
+
+---
+
+## 참고 강의 자료
+- [강의 이론 자료](https://drive.google.com/drive/folders/17EBsOoYToguGwLvG2pkvnEhRKHKgusZx)
+- [강의 실습 코드](https://drive.google.com/drive/folders/1RxYS2XeoYuX3BYvTW39LEwnna3uABu8I)

@@ -20,9 +20,18 @@ Chapter 2_3에서는 실제 MLOps 파이프라인에서 사용되는 주요 기�
 ## 프로젝트 구조
 ```plaintext
 chapter2_2-2_3/
-├── docker/                          # 데이터셋 저장 디렉토리
+├── docs/                            # 강의 이론 자료
+├── practice_code/                   # 강의 실습 코드
+├── airflow/                         # Airflow 실습 코드
+├── docker/                          # 도커 실습 디렉토리
 |   ├──basic/                        # 도커 기본
 |   ├──nginx/                        # 도커 허브에서 nginx 불러와 컨테이너 만들어보기 
 |   ├──scikitlearn/                  # 실제 모델 추론을 도커를 통해 자동화해보기기
 └── README.md               
 ```
+
+---
+
+## 참고 강의 자료
+- [강의 이론 자료](https://drive.google.com/drive/folders/1Y1e1j5pkLWD9_QLMNU6QQR_mHzqHFuka)
+- [강의 실습 코드](https://drive.google.com/drive/folders/1CBgVPF7eo4_bE8pIZAGgrHI6YiyGAnIH)
