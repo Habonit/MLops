@@ -35,8 +35,9 @@
 ```plaintext
 MLOPS/
 ├── .venv/              
-├── chapter2_1/         # Chapter 2-1: 데이터 전처리와 기본 EDA, 모델 훈련 방법에 대한 실습 자료
-├── chapter4_1/         # Chapter 2-3: docker, k8s, airflow, ci/cd에 대한 기초적인 overview  
+├── chapter2_1/         # Chapter 2_1: 데이터 전처리와 기본 EDA, 모델 훈련 방법에 대한 실습 자료
+├── chapter2_2-2_3/     # Chapter 2_2-2_3: mlops 개괄과 docker, k8s, airflow, ci/cd에 대한 기초적인 overview  
+├── chapter4_1/         
 ├── .gitignore          
 └── README.md  
 ```         
