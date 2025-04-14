@@ -8,11 +8,11 @@
 |--------|-----------|
 | `_1_Data_Sturucture.ipynb` | 정형 / 반정형 / 비정형 데이터 구조의 차이와 특성 소개 |
 | `_2_Data_Sampling_for_Imbalance.ipynb` | 불균형 데이터 처리 기법 실습 (SMOTE, ADASYN, SMOTE Tomek 등) |
-| `_3_AIF360.ipynb` | [AIF360](https://velog.io/@paradeigma/MLOPS이론-2.-AIF360)을 활용한 데이터 공정성 교정 실습 |
+| `_3_AIF360.ipynb` | [AIF360을 활용한 데이터 공정성 교정 실습](https://velog.io/@paradeigma/MLOPS이론-2.-AIF360) |
 | `_4_AutoML.ipynb` | 다양한 AutoML 라이브러리(예: H2O, PyCaret 등)를 활용한 자동 모델링 실습 |
 | `_5_EDA.ipynb` | 기본적인 EDA 절차(변수 분포, 상관관계 등) 수행 예제 |
 | `_6_Chisquare_VIF.ipynb` | [카이제곱 검정과 VIF(다중공선성 제거)를 통한 EDA 자동화 실습](https://velog.io/@paradeigma/MLOPS-이론-5.-MLops-사이클에서-나의-위치) |
-| `_7_Embedding_Regression.ipynb` | [MiniLM 기반 임베딩 회귀 모델](https://velog.io/@paradeigma/Minilm-6v) 구축 및 예측 실험 |
+| `_7_Embedding_Regression.ipynb` | [MiniLM 기반 임베딩 회귀 모델 구축 및 예측 실험](https://velog.io/@paradeigma/Minilm-6v) |
 
 ## 학습 목표
 
