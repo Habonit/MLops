@@ -7,10 +7,12 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.metrics import accuracy_score
 from airflow.models import Variable
 
+# provide context는 뭐지?
+# xcom은 언제 사용하는 거지?
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
-    'start_date': datetime(2023, 1, 1),
+    'start_date': datetime(2025, 4, 14),
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
@@ -72,10 +74,6 @@ def select_best_model(**kwargs):
     print(f"Best model is {best_model} with performance {max(rf_performance, gb_performance)}")
 
     return best_model
-
-
-
-
 
 with dag:
     t1 = PythonOperator(
